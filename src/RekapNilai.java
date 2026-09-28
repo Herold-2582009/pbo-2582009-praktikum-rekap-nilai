@@ -70,3 +70,13 @@ ketika di run nilai 85 menjadi grade D - Kurang. Seharusnya untuk nilai 85 Grade
         double rata = nilaiSah > 0 ? total / nilaiSah : 0;
 
         String status = rata >= 60 ? "LULUS" : "TIDAK LULUS";
+
+
+        System.out.println();
+        System.out.println("===== REKAP NILAI =====");
+        System.out.println("Jumlah nilai sah : " + nilaiSah);
+        System.out.println("Total nilai      : " + total);
+        System.out.println("Rata-rata        : " + String.format("%.2f", rata));
+        System.out.println("Status kelas     : " + status);
+    }
+}
