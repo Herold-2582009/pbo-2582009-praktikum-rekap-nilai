@@ -28,3 +28,21 @@ public class RekapNilai {
 
             total += nilai;
             nilaiSah++;
+
+            String grade;
+
+            if (nilai >= 60) {
+                grade = "D";
+            } else if (nilai >= 70) {
+                grade = "C";
+            } else if (nilai >= 80) {
+                grade = "B";
+            } else if (nilai >= 90) {
+                grade = "A";
+            } else {
+                grade = "E";
+            }
+
+            /* Jika Nilai Dan Grade di tukar dari nilai terendah ke bawah jadi nilai tertinggi maa hasilnya
+ketika di run nilai 85 menjadi grade D - Kurang. Seharusnya untuk nilai 85 Grade B - Baik.
+ */
